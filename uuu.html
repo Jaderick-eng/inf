@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #cc6363;
+  padding: 20px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}  
+
+.button {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Shoes</h1>
+    <p>Fit Your Shoes.</p>
+  </div>
+  
+  <div class="topnav">
+    <a href="website.html">Home</a>
+    <a href="Untitled-2.html">Sports</a>
+    <a href="BBB.html">Clothes</a>
+  </div>
+  
+   
+ <Div class="row">
+  <div class="column">
+      <h2>Rp 750.000 (Laki-laki)</h2>
+      <img src="Screenshot 2025-03-12 164217.png">
+      <br><button class="button" height="300px"><a href="Untitled-1.html">Buy</a></button>
+    </div>
+    
+    <div class="column">
+      <h2>Rp 1.050.000 (perempuan)</h2>
+      <img src="Screenshot 2025-03-12 170230.png" height="225px" width="300px">
+      <br><button class="button" height="300px"><a href="Untitled-1.html">Buy</a></button>
+    </div>
+    
+    <div class="column">
+      <h2>Rp 500.000 (anak-anak)</h2>
+      <img src="Screenshot 2025-03-12 170911.png" height="225px" width="300px">
+      <br><button class="button" height="300px"><a href="Untitled-1.html">Buy</a></button>
+    </div>
+  
+    <div class="column">
+      <h2>Rp 740.000 (anak-anak) </h2>
+      <img src="Screenshot 2025-03-12 164217.png">
+      <br><button class="button" height="300px"><a href="Untitled-1.html">Buy</a></button>
+    </div>
+
+    <div class="column">
+      <h2>Rp 799.000 (perempuan)</h2>
+      <img src="Screenshot 2025-03-12 173853.png">
+      <br><button class="button" height="300px"><a href="Untitled-1.html">Buy</a></button>
+    </div>
+    <div class="column">
+      <h2>Rp 605.000 (Laki-laki)</h2>
+      <img src="Screenshot 2025-03-12 174257.png">
+      <br><button class="button" height="300px"><a href="Untitled-1.html">Buy</a></button>
+    </div>
+
+    <div class="column">
+      <h2>Rp 700.000(Laki-laki)</h2>
+      <img src="Screenshot 2025-03-12 175049.png">
+      <br><button class="button" height="300px"><a href="Untitled-1.html">Buy</a></button>
+    </div>
+
+    <div class="column">
+      <h2>Rp 780.000 (Laki-laki)</h2>
+      <img src="Screenshot 2025-03-12 175335.png">
+      <br><button class="button" height="300px"><a href="Untitled-1.html">Buy</a></button>
+    </div>
+
+    <div class="column">
+      <h2>Rp 605.000 (Laki-laki)</h2>
+      <img src="Screenshot 2025-03-12 175452.png">
+      <br><button class="button" height="300px"><a href="Untitled-1.html">Buy</a></button>
+    </div>
+
+  </Div>
+</body>
+</html>
